@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Em[ployee</title>
+    <title>Add Employee</title>
     <!--LINK BOOSTRAP 5 -->
     <link rel="stylesheet" href="resources/bootstrap-5.3.7/css/bootstrap.min.css" />
 
@@ -18,120 +18,25 @@
 
 <body>
     <div class="container-fluid m-5">
-        <!-- Offcanvas navigation menu Start -->
-        <nav class="navbar bg-light fixed-top">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <button></button>
-
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasDarkNavbar"
-                    aria-labelledby="offcanvasDarkNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dashboard</h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body fw-bold">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="employeeForm.html">Employee Management</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">User Management</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Privilege Management</a>
-                            </li>
-                            <!--  Inventory & Supplier -->
-                            <!-- Supplier, Item, Inventory, Qutation Request, Qutation, Purchase Order, Good Received Note, Supplier Payments -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Inventory & Supplier
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="#">Supplier</a></li>
-                                    <li><a class="dropdown-item" href="#">Item</a></li>
-                                    <li><a class="dropdown-item" href="#">Inventory</a></li>
-                                    <li><a class="dropdown-item" href="#">Qutation Request</a></li>
-                                    <li><a class="dropdown-item" href="#">Qutation</a></li>
-                                    <li><a class="dropdown-item" href="#">Purchase Order</a></li>
-                                    <li><a class="dropdown-item" href="#">Good Received Note</a></li>
-                                    <li><a class="dropdown-item" href="#">Supplier Payments</a></li>
-                                </ul>
-                            </li>
-                            <!-- Sales/> Customer, Customer Order, Customer Payments -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Sales
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="#">Customer</a></li>
-                                    <li><a class="dropdown-item" href="#">Customer Order</a></li>
-                                    <li><a class="dropdown-item" href="#">Customer Payments</a></li>
-                                </ul>
-                            </li>
-                            <!-- Reports -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Reports
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="#">Sales Reports</a></li>
-                                    <li><a class="dropdown-item" href="#">Low Stock</a></li>
-                                    <li><a class="dropdown-item" href="#">Pending Orders</a></li>
-                                </ul>
-                            </li>
-                            <!-- Other/>vehicals -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Other
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="#">Vehicle</a></li>
-
-                                </ul>
-                            </li>
-                            <!-- User/> My Profile, Logout -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    User
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="#">My Profile</a></li>
-                                    <li><a class="dropdown-item" href="#">Logout</a></li>
-
-                                </ul>
-                            </li>
-                        </ul>
-
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <!-- Offcanvas navigation menu end -->
-
-
         <div class="row">
             <div class="col-1">
 
 
             </div>
+            
             <div class="col-10">
                 <!-- Start title bar -->
                 <div class="row">
-                    <h1 class="title">Add New Employee</h1>
+                    
+                    <div class="col">
+                        <h1 class="title">Add New Employee</h1>
+                    </div>
+                    <div class="col">
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <button class="btn btn-primary btn-lg" type="button"><i
+                                    class="fa-regular fa-eye"></i>&nbsp&nbsp&nbspView Employee</button>
+                        </div>
+                    </div>
                 </div>
                 <!-- End title bar -->
 
@@ -392,7 +297,7 @@
     </div>
 
     <!-- link boostrap js file -->
-    <script src="resources/bootstrap-5.3.7/js/bootstrap.bundle.min.js"></script>
+    <script src="Resources/bootstrap-5.3.7/js/bootstrap.bundle.min.js"></script>
 
 
 </body>
