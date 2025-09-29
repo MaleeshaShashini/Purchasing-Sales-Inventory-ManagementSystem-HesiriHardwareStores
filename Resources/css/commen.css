@@ -1,0 +1,48 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  padding-top: 20px;
+}
+
+.btn-clear{
+    background-color: #1e85f7;
+    color: black;
+    width: 30%;
+    font-weight: bold;
+    border-radius:16px;
+}
+
+.btn-submit{
+    background-color: rgba(0, 255, 0, 0.877);
+    color: black;
+    width: 25%;
+    font-weight: bold;
+    border-radius:16px;
+}
+
+.btn-update{
+    background-color:	#f8b014;
+    color: black;
+    width: 25%;
+    font-weight: bold;
+    border-radius:16px;
+}
+.btn-submit:hover{
+    background-color:  rgb(0, 255, 0);
+    border: 2px solid	#080808;
+    color: black;
+    border-radius: 16px;
+}
+
+.btn-clear:hover{
+    background-color: #1783ff ;
+    border: 2px solid #080808;
+    color: black;
+    border-radius:16px;
+    width: 30%;
+}
+.btn-update:hover{
+    background-color: 	#ffb20c;
+    border: 2px solid  	#080808;
+    color: black;
+    border-radius: 16px;
+}
