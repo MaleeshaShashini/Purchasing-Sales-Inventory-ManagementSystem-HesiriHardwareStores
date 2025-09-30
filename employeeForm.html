@@ -17,17 +17,26 @@
 </head>
 
 <body>
-    <div class="container-fluid m-5">
+    <div class="container-fluid">
         <div class="row">
+
+            <!--start sideMenu -->
             <div class="col-1">
 
+                <!-- sideMenu placeholder -->
+                <div id="sideMenu"></div>
+
+                <!-- scrollBar placeholder -->
+                <div id="scrollBar"></div>
 
             </div>
-            
-            <div class="col-10">
+            <!--end sideMenu -->
+
+            <!-- start main content -->
+            <div class="col-10 mt-5">
                 <!-- Start title bar -->
                 <div class="row">
-                    
+
                     <div class="col">
                         <h1 class="title">Add New Employee</h1>
                     </div>
@@ -41,7 +50,7 @@
                 <!-- End title bar -->
 
                 <!-- start form -->
-                <div class="row">
+                <div class="row form">
                     <div class="card ">
                         <div class="card-body">
                             <form action="" id="formEmployee">
@@ -59,7 +68,7 @@
                                         <label for="textFullName" class="form-label fw-bold">Fullname: <span
                                                 class="text-danger">*</span></label>
                                         <div class="input-group">
-                                            <span class="input-group-text">
+                                            <span class="input-group-text ">
                                                 <i class="fa fa-user" aria-hidden="true"></i>
                                             </span>
                                             <textarea name="fullname" id="textFullName" class="form-control" required
@@ -86,8 +95,14 @@
                                         <label for="textNameWithInitials" class="form-label fw-bold">Name with
                                             Initials:
                                             <span class="text-danger">*</span></label>
-                                        <input type="text" class="form-control" id="textNameWithInitials" disabled
-                                            placeholder="Enter FullName first">
+                                        <div class="input-group">
+                                            <span class="input-group-text">
+                                                <i class="fa-solid fa-arrow-up-z-a"></i>
+                                            </span>
+                                            <input type="text" class="form-control" id="textNameWithInitials" disabled
+                                            placeholder="Enter FullName First">
+                                        </div>
+                                        
                                     </div>
                                 </div>
                                 <!-- fullname / calling name / name with initials -->
@@ -138,8 +153,14 @@
                                         <label for="textAge" class="form-label fw-bold">
                                             Age : <span class="text-danger">*</span>
                                         </label>
-                                        <input type="number" id="textAge" disabled class="form-control" required
+                                        <div class="input-group">
+                                            <span class="input-group-text">
+                                                <i class="fa-solid fa-arrow-up-9-1"></i>
+                                            </span>
+                                            <input type="number" id="textAge" disabled class="form-control" required
                                             placeholder="Enter NIC First">
+                                        </div>
+                                        
 
                                     </div>
                                 </div>
@@ -220,11 +241,19 @@
                                     <div class="col-3">
                                         <label for="selectCivilStatus" class="form-label fw-bold">Civil Status:
                                             <span class="text-danger">*</span></label>
-                                        <select name="CivilStatus" id="selectCivilStatus" required class="form-select">
-                                            <option value="" selected disabled>Select Civil Status</option>
-                                            <option value="Single">Single</option>
-                                            <option value="Married">Married</option>
-                                        </select>
+
+                                        <div class="input-group">
+                                            <span class="input-group-text">
+                                               <i class="fa-solid fa-person"></i>
+                                            </span>
+                                            <select name="CivilStatus" id="selectCivilStatus" required
+                                                class="form-select">
+                                                <option value="" selected disabled>Select Civil Status</option>
+                                                <option value="Single">Single</option>
+                                                <option value="Married">Married</option>
+                                            </select>
+                                        </div>
+
                                     </div>
                                     <div class="col-3">
                                         <label for="selectDesignation" class="form-label fw-bold">Designation: <span
@@ -290,15 +319,28 @@
                 </div>
                 <!-- end form -->
             </div>
+            <!-- end main content -->
         </div>
 
-
+        <!-- Footer placeholder -->
+        <div id="footer"></div>
 
     </div>
 
     <!-- link boostrap js file -->
     <script src="Resources/bootstrap-5.3.7/js/bootstrap.bundle.min.js"></script>
 
+    <!-- link fontawesome js file -->
+    <script src="/Resources/fontawesome/js/all.min.js"></script>
+
+    <!-- link commen javascript file -->
+    <script src="/Resources/js/commen.js"></script>
+
+    <script>;
+        includeHTML("sideMenu", "Resources/Components/sideMenu.html");
+        includeHTML("scrollBar", "Resources/Components/scrollBar.html");
+        includeHTML("footer", "Resources/Components/footer.html");
+    </script>
 
 </body>
 
