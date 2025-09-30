@@ -1,8 +1,11 @@
+/* start body styles */
 body {
   font-family: 'Poppins', sans-serif;
   padding-top: 20px;
 }
+/* end body styles */
 
+/*start form button styles */
 .btn-clear{
     background-color: #1e85f7;
     color: black;
@@ -46,3 +49,14 @@ body {
     color: black;
     border-radius: 16px;
 }
+/*end form button styles */
+
+/* start footer styles */
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: #000;
+    font-weight: 500;
+}
+/* end footer styles */
